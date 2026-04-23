@@ -5,6 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Progress } from "@/components/ui/progress";
+import { ExternalLink } from "lucide-react";
 
 const curriculum = [
   {
@@ -17,6 +18,10 @@ const curriculum = [
       "Course project intro + team formation.",
       "Lab: Install tools, basic Git setup (clone, commit, push).",
       "Reading: Sommerville Ch. 1–2; Pragmatic Programmer (intro + 'The Cat Ate My Source Code').",
+      {
+        label: "Week 1 Resources",
+        url: "https://github.com/victordeman/Intro-to-wasre-engr/tree/main-11830105413473987484/links/week1",
+      },
     ],
   },
   {
@@ -179,7 +184,19 @@ export default function Syllabus() {
                     {week.content.map((item, i) => (
                       <li key={i} className="flex items-start">
                         <span className="mr-3 mt-1.5 h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0" />
-                        <span className="text-muted-foreground leading-relaxed">{item}</span>
+                        {typeof item === "string" ? (
+                          <span className="text-muted-foreground leading-relaxed">{item}</span>
+                        ) : (
+                          <a
+                            href={item.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary hover:underline inline-flex items-center gap-1.5 leading-relaxed"
+                          >
+                            {item.label}
+                            <ExternalLink className="h-3.5 w-3.5" />
+                          </a>
+                        )}
                       </li>
                     ))}
                   </ul>
