@@ -2,24 +2,12 @@
 > temp-app@0.1.0 dev
 > next dev
 
-   ▲ Next.js 15.1.0
+   ▲ Next.js 15.5.15
    - Local:        http://localhost:3000
    - Network:      http://192.168.0.2:3000
 
  ✓ Starting...
- ✓ Ready in 1862ms
- ○ Compiling / ...
- ✓ Compiled / in 9.9s (1074 modules)
- GET / 200 in 12571ms
- GET / 200 in 137ms
- ○ Compiling /syllabus ...
- ✓ Compiled /syllabus in 1322ms (1135 modules)
- GET /syllabus 200 in 1562ms
- GET /syllabus 200 in 92ms
- GET / 200 in 314ms
- GET /syllabus 200 in 74ms
- ✓ Compiled in 397ms (537 modules)
- ✓ Compiled in 254ms (537 modules)
- ✓ Compiled in 188ms (537 modules)
- ✓ Compiled in 471ms (1135 modules)
- ✓ Compiled in 4.9s (537 modules)
+ ✓ Ready in 2.1s
+ ○ Compiling /staff ...
+ ✓ Compiled /staff in 14.2s (1120 modules)
+ GET /staff 200 in 16327ms
