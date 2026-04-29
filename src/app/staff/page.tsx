@@ -34,57 +34,59 @@ export default function StaffPage() {
         </p>
       </div>
 
-      <div className="max-w-6xl mx-auto mb-16">
+      <div className="max-w-4xl mx-auto mb-16">
         <h2 className="text-3xl font-bold mb-8">Instructors</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="space-y-12">
           {staff.map((member, index) => (
-            <Card key={index} className="overflow-hidden flex flex-col">
-              <div className="relative aspect-[4/3] w-full">
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="flex flex-col">
-                <CardHeader>
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <CardTitle className="text-2xl">{member.name}</CardTitle>
-                      <Badge variant="secondary" className="mt-2">
-                        {member.role}
-                      </Badge>
+            <Card key={index} className="overflow-hidden">
+              <div className="flex flex-col md:flex-row">
+                <div className="relative w-full md:w-1/3 aspect-[4/3] md:aspect-auto">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="flex-1">
+                  <CardHeader>
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <CardTitle className="text-2xl">{member.name}</CardTitle>
+                        <Badge variant="secondary" className="mt-2">
+                          {member.role}
+                        </Badge>
+                      </div>
                     </div>
-                  </div>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  {member.credentials && (
-                    <p className="text-sm text-muted-foreground italic">
-                      {member.credentials}
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    {member.credentials && (
+                      <p className="text-sm text-muted-foreground italic font-medium">
+                        {member.credentials}
+                      </p>
+                    )}
+                    <p className="text-sm leading-relaxed">
+                      {member.bio}
                     </p>
-                  )}
-                  <p className="text-sm leading-relaxed">
-                    {member.bio}
-                  </p>
-                  <div className="pt-4 space-y-2 border-t">
-                    <div className="flex items-center text-sm text-muted-foreground">
-                      <Mail className="w-4 h-4 mr-2" />
-                      <a href={`mailto:${member.email}`} className="hover:underline">{member.email}</a>
+                    <div className="pt-4 space-y-2 border-t">
+                      <div className="flex items-center text-sm text-muted-foreground">
+                        <Mail className="w-4 h-4 mr-2" />
+                        <a href={`mailto:${member.email}`} className="hover:underline">{member.email}</a>
+                      </div>
+                      <div className="flex items-center text-sm text-muted-foreground">
+                        <Clock className="w-4 h-4 mr-2" />
+                        <span>Office Hours: {member.officeHours}</span>
+                      </div>
                     </div>
-                    <div className="flex items-center text-sm text-muted-foreground">
-                      <Clock className="w-4 h-4 mr-2" />
-                      <span>Office Hours: {member.officeHours}</span>
-                    </div>
-                  </div>
-                </CardContent>
+                  </CardContent>
+                </div>
               </div>
             </Card>
           ))}
         </div>
       </div>
 
-      <div className="mt-16 text-center">
+      <div className="mt-16 text-center border-t pt-12">
         <h2 className="text-2xl font-semibold mb-4 text-muted-foreground">Teaching Assistants</h2>
         <p className="text-muted-foreground italic">
           There are no Teaching Assistants for this course.
