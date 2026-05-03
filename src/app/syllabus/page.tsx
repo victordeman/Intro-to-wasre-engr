@@ -33,6 +33,10 @@ const curriculum = [
       "Basic project planning and estimation (for small scopes).",
       "Lab: Pair exercise — contribute to a shared simple repo; initial project brainstorming.",
       "Reading: Sommerville Ch. 3; Pragmatic Programmer (relevant chapters on working together).",
+      {
+        label: "Week 2 Resources",
+        url: "https://github.com/victordeman/intro_to_software_engr_main/tree/main-11830105413473987484/links/week2",
+      },
     ],
   },
   {
