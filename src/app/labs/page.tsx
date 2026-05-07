@@ -10,7 +10,7 @@ const labs = [
     duration: "2 hours",
     difficulty: "Beginner",
     description: "Install necessary tools and get comfortable with basic Git operations like cloning, committing, and pushing code.",
-    link: "https://github.com/victordeman/Intro-to-wasre-engr/tree/main/labs/lab1"
+    link: "https://github.com/victordeman/intro_to_software_engr_main/tree/main-11830105413473987484/links/lab1"
   },
   {
     week: 2,
