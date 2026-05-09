@@ -48,6 +48,10 @@ const curriculum = [
       "Documenting requirements (user stories, simple use cases). Validation and change.",
       "Lab: Elicit/document requirements for team project; create a basic product backlog.",
       "Reading: Sommerville Ch. 4–5; Wiegers excerpts.",
+      {
+        label: "Week 3-4 Resources",
+        url: "https://github.com/victordeman/intro_to_software_engr_main/tree/main-11830105413473987484/links/week3",
+      },
     ],
   },
   {
