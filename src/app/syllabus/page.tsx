@@ -63,6 +63,10 @@ const curriculum = [
       "Design principles: modularity, abstraction, separation of concerns.",
       "Lab: Sketch high-level design and simple UML for the project.",
       "Reading: Sommerville Ch. 6–7.",
+      {
+        label: "Week 5 Resources",
+        url: "https://github.com/victordeman/intro_to_software_engr_main/tree/main-11830105413473987484/links/week5",
+      },
     ],
   },
   {
