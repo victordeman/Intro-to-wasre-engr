@@ -93,6 +93,10 @@ const curriculum = [
       "Build and integration basics.",
       "Lab: Continue implementation with peer reviews.",
       "Reading: Clean Code + Pragmatic Programmer.",
+      {
+        label: "Week 7 Resources",
+        url: "https://github.com/victordeman/intro_to_software_engr_main/tree/main-11830105413473987484/links/week7",
+      },
     ],
   },
   {
