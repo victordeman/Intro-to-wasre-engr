@@ -78,6 +78,10 @@ const curriculum = [
       "Coding standards, readability, refactoring basics.",
       "Lab: Refine design; start implementing core features in teams.",
       "Reading: Sommerville relevant sections; Clean Code (Ch. on meaningful names, functions).",
+      {
+        label: "Week 6 Resources",
+        url: "https://github.com/victordeman/intro_to_software_engr_main/tree/main-11830105413473987484/links/week6",
+      },
     ],
   },
   {
@@ -89,6 +93,10 @@ const curriculum = [
       "Build and integration basics.",
       "Lab: Continue implementation with peer reviews.",
       "Reading: Clean Code + Pragmatic Programmer.",
+      {
+        label: "Week 7 Resources",
+        url: "https://github.com/victordeman/intro_to_software_engr_main/tree/main-11830105413473987484/links/week7",
+      },
     ],
   },
   {
